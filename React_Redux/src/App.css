@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family:"Urbanist",sans-serif 
+}
+:root{
+  --blue-color:#007FFF;
+}
+h1,
+h2,
+h3,
+h4,
+div,
+span {
+  font-size: 1.5rem;
+}
+body{
+  background-color: black;
+  color:  white;
+}
+.container {
+  padding: 4rem 2rem;
+  max-width: 100rem;
+  height: auto;
+  margin: 0 auto;
+}
+ li,a{
+
+  color:white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  list-style: none;
+  text-transform: capitalize;
+}
+button{
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: var(--blue-color);
+  border: 1px solid white;
+  font-size: 1.6rem;
+  color:white;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+::placeholder{
+ text-transform: capitalize;
+ font-size: 1.3rem;
+}
+/*  */
+.section-increment-decrement {
+  display: grid;
+  gap: 3rem;
+  place-items: center;
+
+  & .container-with-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    background-color: pink;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+
+    & button {
+      cursor: pointer;
+      font-size: 2rem;
+      border: none;
+      background-color: transparent;
+      height: auto;
+      padding: 0.5rem;
+        color: var(--blue-color)
+    }
+  }
+}
+
+
+/* Navbar */
+
+.navbar-container{
+  padding: 1rem ;
+  background-color: rgb(49, 48, 48);
+  color: white;
+ & .section-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  
+  }
+ }
+}
+/* nav section end */
+
+/* todo section start  */
+.section-to-do-list{
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & .box form{
+    display: flex;
+    gap: 2rem;
+& button:nth-child(2){
+ &:hover{
+  background-color: #FEBE10;
+  box-shadow: 0px 3px 4px #d84f4f;
+ }
+}
+    & input{
+      background-color: transparent;
+      border: 0.5px solid white;
+      padding: 0.4rem;
+      border-radius: 10%;
+      -webkit-border-radius: 10%;
+      -moz-border-radius: 10%;
+      -ms-border-radius: 10%;
+      -o-border-radius: 10%;
+      color: white;
+      font-size: 1.3rem;
+      text-transform: capitalize;
+}
+   
+  }
+  & .user-data{
+margin-top: 8rem;
+padding: 0 1.5rem;
+color: black;
+& ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & li{
+    padding:0 0.5rem;
+    background-color: white;
+    border-radius:2rem;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+    width: 25rem;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    &:hover{
+      background-color: var(--blue-color);
+      color: white;
+    }
+
+    & button:nth-child(2) 
+                    {
+      border: none;
+      color: red;
+      background-color: transparent;
+      font-size: 4rem;
+      padding: 0;
+    }
+  }
+}
+  }
+}
+
+/* todo section end  */

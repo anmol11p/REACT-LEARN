@@ -1,0 +1,17 @@
+[
+    {
+        "icon":"IoLocationOutline",
+        "title":"Find Us",
+        "details":"Pune,Maharashtra"
+    },
+    {
+        "icon": "IoCall",
+        "title":"callus",
+        "details":"9548223411"
+    },
+    {
+        "icon":"IoMailOutline",
+        "title":"mail us",
+        "details":"pandayanmol6@gmail.com"
+    }
+]

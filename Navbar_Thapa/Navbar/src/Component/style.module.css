@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "urbanist";
+}
+html {
+  font-size: 62.5%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.1fr;
+  background-color: gray;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 6rem;
+}
+.logo {
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+  padding: 0 1.5rem;
+  color: rgb(255, 255, 255);
+}
+section {
+  width: 100%;
+}
+.menu {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+button {
+  background-color: gray;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+}
+.threedot {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cloud {
+  /* height: 10rem; */
+  width: 100%;
+margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  letter-spacing: .3rem;
+}
+.cloud p{
+    font-size: 1.3rem;
+    column-count: 3;
+    column-gap: 2rem;
+    margin-top: 5rem;
+    column-rule:1px solid black;
+    column-rule-color: black;
+    text-align: justify;
+
+}
+.icon2 {
+  font-size: 8rem;
+  transition: all 2s;
+}
+.Icon2:hover {
+  transform: translateY(3rem);
+  transition-timing-function: linear;
+  height: 25rem;
+}
+
+@media (max-width: 998px) {
+  .mobilemode {
+    display: none;
+  }
+  button {
+    display: inline-block;
+  }
+  .webmode {
+    border-radius: 0.8rem;
+    position: absolute;
+    top: 6rem;
+    text-align: center;
+    grid-template-columns: 1fr;
+    box-shadow: 0px 0px 4px #999;
+    color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .webmode li:first-child {
+    margin-top: 1rem;
+  }
+  .webmode li:last-child {
+    margin-bottom: 1rem;
+  }
+  .webmode li a {
+    color: rgb(90, 86, 86);
+    font-size: 1.5rem;
+  }
+  .cloud p{
+font-size: 1rem;
+color: #5f2a2a;
+
+  }
+}

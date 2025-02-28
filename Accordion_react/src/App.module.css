@@ -1,0 +1,130 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Center the heading */
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  /* Outer container is centered and adjusts to screen size */
+  .outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 20px;
+    padding: 0 1rem;
+  }
+  
+  /* Inner container for each accordion item */
+  .innerContainer {
+    background-color: #333;
+    color: white;
+    list-style: none;
+    padding: 15px;
+    width: 80%;
+    max-width: 700px;
+    border-left: 4px solid #ff4757;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for better interactivity */
+  .innerContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Flex for the question and the button */
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 1.2rem;
+  }
+  
+  /* Show button styles */
+  .showbtn, .hidebtn {
+    color: white;
+    background-color: #2ed573;
+    margin-right: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hide button styles */
+  .hidebtn {
+    background-color: #ff4757;
+  }
+  
+  /* Button hover effect */
+  .showbtn:hover, .hidebtn:hover {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Styles for the answer */
+  .answer {
+    text-wrap: wrap;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .innerContainer {
+      width: 90%;
+    }
+  
+    .question {
+      font-size: 1rem;
+    }
+  
+    .showbtn, .hidebtn {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .answer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .innerContainer {
+      width: 95%;
+    }
+  
+    .question {
+      font-size: 0.9rem;
+    }
+  
+    .showbtn, .hidebtn {
+      padding: 5px 8px;
+      font-size: 0.85rem;
+    }
+  
+    .answer {
+      font-size: 0.85rem;
+    }
+  }
+  
